@@ -112,14 +112,6 @@ export function ScammerSearch() {
           )}
         </div>
       )}
-
-      {/* Initial State */}
-      {!hasSearched && (
-        <div className="text-center py-8 text-muted-foreground">
-          <Search className="h-12 w-12 mx-auto mb-4 opacity-50" />
-          <p>พิมพ์ข้อมูลเพื่อเริ่มค้นหา</p>
-        </div>
-      )}
     </div>
   )
 }

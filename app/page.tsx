@@ -1,4 +1,5 @@
 import { ShieldAlert } from "lucide-react"
+import Image from "next/image"
 import { ScammerSearch } from "@/components/scammer-search"
 
 export default function HomePage() {
@@ -19,6 +20,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="py-12 px-4">
         <div className="container mx-auto text-center max-w-2xl">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/warz-logo.png"
+              alt="WarZ Siam MMO"
+              width={400}
+              height={120}
+              className="object-contain w-auto"
+              loading="eager"
+            />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
             เช็คก่อนซื้อขาย <span className="text-primary">ปลอดภัยกว่า</span>
           </h2>
@@ -34,7 +45,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-6 px-4">
+      <footer className="border-t border-border py-3 px-4">
         <div className="container mx-auto text-center text-sm text-muted-foreground">
           <p>ข้อมูลนี้รวบรวมจากการรายงานของสมาชิก กรุณาใช้วิจารณญาณในการตัดสินใจ</p>
         </div>
